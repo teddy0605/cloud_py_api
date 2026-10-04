@@ -1,26 +1,7 @@
-## Submitting issues
+# Contributing
 
-### Short version
+This is a maintained fork of the archived [cloud-py-api/cloud_py_api](https://github.com/cloud-py-api/cloud_py_api), used by [teddy0605/mediadc](https://github.com/teddy0605/mediadc).
 
- * The [**issue templates can be found here**][template] but be aware of the different repositories! See list below. Please always use the issue template when reporting issues.
-
-### Guidelines
-* Please search the existing issues first, it's likely that your issue was already reported or even fixed.
-  - Go to one of the repositories, click "issues" and type any word in the top search/command bar.
-  - You can also filter by appending e. g. "state:open" to the search string.
-  - More info on [search syntax within github](https://help.github.com/articles/searching-issues)
-* Report the issue using our [template][template], it includes all the informations we need to track down the issue.
-
-If your issue appears to be a bug, and hasn't been reported, open a new issue.
-
-Help us to maximize the effort we can spend fixing issues and adding new features, by not reporting duplicate issues.
-
-[template]: https://raw.github.com/bigcat88/cloud_py_api/main/.github/ISSUE_TEMPLATE/bug_report.md
-
-## Contributing to Source Code
-
-Thanks for wanting to contribute source code to the `cloud_py_api` app. That's great!
-
-## Translations
-
-For now we don't support translations.
+- Open issues and pull requests in [teddy0605/cloud_py_api](https://github.com/teddy0605/cloud_py_api).
+- Keep changes small and focused. CI (lint, build, Python and security checks) must pass before a PR is merged.
+- Report security issues through GitHub private vulnerability reporting (Security tab, "Report a vulnerability"), not in public issues. See `SECURITY.md`.
