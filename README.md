@@ -7,7 +7,7 @@
 > environment variable, and detects `occ` in the official Nextcloud Docker image
 > (`/var/www/html`). Issues and pull requests: https://github.com/teddy0605/cloud_py_api/issues
 
-[![(Py)Analysis & Coverage](https://github.com/cloud-py-api/cloud_py_api/actions/workflows/py_analysis-coverage.yml/badge.svg)](https://github.com/cloud-py-api/cloud_py_api/actions/workflows/py_analysis-coverage.yml)
+[![CI](https://github.com/teddy0605/cloud_py_api/actions/workflows/ci.yml/badge.svg)](https://github.com/teddy0605/cloud_py_api/actions/workflows/ci.yml)
 ![PythonVersion](https://img.shields.io/badge/python-3.9%20%7C%203.10%20%7C%203.11-blue)
 ![impl](https://img.shields.io/pypi/implementation/nc_py_api)
 ![pypi](https://img.shields.io/pypi/v/nc_py_api.svg)

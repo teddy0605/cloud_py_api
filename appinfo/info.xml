@@ -32,9 +32,9 @@ Nextcloud Python API Framework
 	</documentation>
 	<category>integration</category>
 	<category>tools</category>
-	<website>https://github.com/cloud-py-api/cloud_py_api</website>
-	<bugs>https://github.com/cloud-py-api/cloud_py_api/issues</bugs>
-	<repository type="git">https://github.com/cloud-py-api/cloud_py_api</repository>
+	<website>https://github.com/teddy0605/cloud_py_api</website>
+	<bugs>https://github.com/teddy0605/cloud_py_api/issues</bugs>
+	<repository type="git">https://github.com/teddy0605/cloud_py_api</repository>
 	<dependencies>
 		<php min-version="7.4" min-int-size="64" />
 		<nextcloud min-version="30" max-version="35" />
