@@ -62,6 +62,9 @@ def php_call(*params, log_error=True) -> Union[bytes, None]:
     return result.stdout
 
 
-_OCC_PATH = os.path.join(os.environ.get("SERVER_ROOT", "/var/www/nextcloud"), "occ")
+_server_root = os.environ.get("SERVER_ROOT")
+if not _server_root:
+    _server_root = "/var/www/html" if os.path.exists("/var/www/html/occ") else "/var/www/nextcloud"
+_OCC_PATH = os.path.join(_server_root, "occ")
 _PHP_PATH = os.environ.get("PHP_PATH", "php")
 _SNAP = os.environ.get("IS_SNAP_ENV", None)

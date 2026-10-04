@@ -50,7 +50,7 @@ class PythonService {
 			$pythonCommand = $settingMapper->findByName('python_command');
 			$this->pythonCommand = $pythonCommand->getValue();
 		} catch (DoesNotExistException $e) {
-			$this->pythonCommand = '/usr/bin/python3';
+			$this->pythonCommand = getenv('MEDIADC_PYTHON') ?: '/usr/bin/python3';
 		}
 		$this->ncInstanceId = $this->config->getSystemValue('instanceid');
 		$this->ncDataFolder = $this->config->getSystemValue('datadirectory');

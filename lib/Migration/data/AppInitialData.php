@@ -39,7 +39,7 @@ class AppInitialData {
 		'settings' => [
 			[
 				'name' => 'python_command',
-				'value' => '/usr/bin/python3',
+				'value' => '/opt/mediadc-venv/bin/python3',
 				'displayName' => 'Full path to python interpreter',
 				'title' => '',
 				'description' => 'Absolute path to the python runnable (e.g. "/usr/bin/python3"). Can be obtained by `which python3` command. Used when pre-compiled binaries option is not selected.',
