@@ -1,4 +1,11 @@
-# Nextcloud Python Framework
+# Nextcloud Python Framework (maintained fork)
+
+> **Maintained fork.** Upstream [cloud-py-api/cloud_py_api](https://github.com/cloud-py-api/cloud_py_api)
+> is archived. This fork is maintained by [teddy0605](https://github.com/teddy0605) for use with
+> the maintained [MediaDC fork](https://github.com/teddy0605/mediadc). It adds Nextcloud 35
+> support (`max-version` 35), lets the Python command fall back to the `MEDIADC_PYTHON`
+> environment variable, and detects `occ` in the official Nextcloud Docker image
+> (`/var/www/html`). Issues and pull requests: https://github.com/teddy0605/cloud_py_api/issues
 
 [![(Py)Analysis & Coverage](https://github.com/cloud-py-api/cloud_py_api/actions/workflows/py_analysis-coverage.yml/badge.svg)](https://github.com/cloud-py-api/cloud_py_api/actions/workflows/py_analysis-coverage.yml)
 ![PythonVersion](https://img.shields.io/badge/python-3.9%20%7C%203.10%20%7C%203.11-blue)
