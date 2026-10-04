@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.2 - 2026-10-04]
+
+First release of the maintained fork (teddy0605/cloud_py_api).
+
+### Changed
+
+- Nextcloud 35 support (`max-version` 35).
+- The default Python command falls back to the `MEDIADC_PYTHON` environment variable, and
+  `nc_py_api` detects `occ` in the official Nextcloud Docker image.
+- Updated frontend dependencies for security fixes.
+- Releases are built by GitHub Actions from the tag and published with a build provenance
+  attestation and `SHA256SUMS`; the built `js/` is not committed.
+
 ## [0.2.0 - 2024-10-20]
 
 Maintenance update. Update NC versions to support NC30+ only.

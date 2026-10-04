@@ -72,8 +72,11 @@ jobs:
       # --ignore-scripts. The job has no secrets and a read-only token.
       - run: npm ci --no-audit --no-fund
       - run: npm run lint
-      # js/ is not committed in this repo; this only checks that the build works.
+      # js/ is not committed in this repo; releases are built by release.yml.
       - run: npm run build
+      # Same packaging as release.yml, so a broken package shows up before a tag is pushed.
+      - name: Package (dry run)
+        run: .github/scripts/package-release.sh "$RUNNER_TEMP/dist"
 
   python:
     name: Python (nc_py_api)
