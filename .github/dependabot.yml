@@ -29,6 +29,21 @@ updates:
     open-pull-requests-limit: 3
     cooldown:
       default-days: 7
+    # The frontend is Vue 2. Vue 3 and the Nextcloud libraries built on it need a code
+    # migration, not a version bump, so their major versions are not proposed.
+    ignore:
+      - dependency-name: "vue"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "vuex"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "vue-router"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "@nextcloud/vue"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "@nextcloud/dialogs"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "@nextcloud/password-confirmation"
+        update-types: ["version-update:semver-major"]
     groups:
       npm-minor-patch:
         applies-to: version-updates
