@@ -3,7 +3,9 @@
 #   release is usually caught (and pulled) by others first. Security fixes ignore cooldown.
 # - groups: one PR per ecosystem instead of one PR per package; security updates are grouped
 #   separately (applies-to: security-updates) so alerts produce one PR, not one per advisory.
-# Review the diff/changelog of every bump before merging, especially for actions.
+# npm patch/minor PRs merge automatically once CI, the supply-chain checks and the Nextcloud
+# integration test pass (.github/workflows/dependabot-auto-merge.yml). Review everything
+# else before merging, especially action bumps.
 version: 2
 updates:
   # Keeps the SHA pins in .github/workflows/*.yml current.
