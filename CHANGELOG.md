@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.3 - 2026-11-02]
+
+Dependency and security update.
+
+### Changed
+
+- Frontend rebuilt with dompurify 3.4.17, postcss-selector-parser 6.1.5 and source-map-js 1.2.2.
+- Dev tooling: phpunit 9.6.33, fast-xml-parser 4.5.7, qs 6.16.2, fast-uri 3.1.9,
+  launch-editor 2.14.2.
+- CI: Nextcloud integration test; green Dependabot updates merge automatically after
+  supply-chain checks.
+
 ## [0.2.2 - 2026-10-04]
 
 First release of the maintained fork (teddy0605/cloud_py_api).
